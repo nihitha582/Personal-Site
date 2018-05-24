@@ -1,0 +1,131 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>EECS 183 Projects</title>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+
+		<style>
+			/* Sets the text hover color */
+			.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    			color: #FFFFFF; 
+			}
+			/*Sets the text hover color on navbar brand*/
+			.navbar-default .navbar-brand> li > a:hover, .navbar-default .navbar-brand > li > a:focus {
+    			color: #FFFFFF; 
+			}
+			/* Sets the background color for the active page*/
+			.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+            a:hover, .navbar-default .navbar-nav > .active > a:focus {
+           		color: #cde2f4; 
+    			background-color: #354b5e;
+			}
+			/* color scheme for the main nav bar */
+			.navbar-default {
+				color: #cde2f4;
+    			background-color: #354b5e;
+    			border-color: #354b5e;
+			}
+			/*Change active text color here*/
+			.navbar-default .navbar-nav > li > a {
+    			color: #cde2f4; 
+			}
+			/*Changes the color of my name in the corner */
+			.navbar-default .navbar-brand{
+				color: #FFFFFF;
+			}
+			/* Changes the color scheme of the dropdown menu */
+			.navbar-default .dropdown-menu > li > a:hover,
+			.navbar-default .dropdown-menu > li > a:focus {
+    			color: #cde2f4;
+    			text-decoration: none;
+    			background-color: #354b5e; /*change color of links in drop down here*/
+			}
+			.navbar-default .dropdown{
+				color: #cde2f4;
+			}
+			/* page style */
+			.container .header1 {
+				color: #354b5e;
+			}
+			.container .header3 {
+				color: #6da8db;
+			}
+			.container .paragraph{
+				font-size: 19px;
+				color: #51728f;
+			}
+			</style>
+	</head>
+	<body class = "body">
+		<!-- navigation bar -->
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="../index.html">Nihitha Pinnamaraju</a>
+    			</div>
+    			<ul class="nav navbar-nav">
+      				<li><a href="../resume/resume.html">Resume</a></li>
+      				<li><a href="aboutme.html">About Me</a></li>
+          			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+        				<li><a href="../projects/website.html">My Website</a></li>
+          				<li><a href="../projects/eecs280.html">EECS 280</a></li>
+          				<li><a href="../projects/eecs183.html">EECS 183</a></li>
+        			</ul>
+      				</li>
+      			<li><a href="../contactme/contactme.html">Contact Me</a></li>
+    			</ul>
+  			</div>
+		</nav>
+		<!-- end navigation bar -->
+
+		<div class = "container">
+			<h1 class = "header1"> EECS 183 Projects </h1>
+			<h3 class = "header3"> Project 1: Cupcakes.cpp </h3>
+			<img src = "cupcake.jpeg" align = "left" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This is the first project that I ever completed in C++ and it involves a customizable recipe for cupcakes based on a user input of people that need 
+				to be served. What happens is that a user is first asked 'How many people do you need to serve?'. Based on the input, the various ingredients in
+				the standard cupcake recipe are calculated and configured to make exactly the amount of cupcakes needed to serve the user inputted number. Then, a 
+				few short seconds later, an ingredient list is generated as well as a total expected cost of ingredients based on standard prices given to us. The
+				main goal for this project was to get us to understand the basics of creating a simple program and performing calculations. Since 
+				this was a school project, I cannot post the code,so contact me if you would like to view my code for this project!
+			</p>
+			</br>
+
+			<h3 class = "header3" align = "left"> Project 2: Birthdays.cpp </h3>
+			<img src = "birthday.jpg" align = "right" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This is the second project that I completed in C++ and it is a program that allows users to choose from a variety of options. For example, users
+				can select the calculate birthday day option which prompts them to type in their birthday, select a year within the Gregorian calendar, and then
+				outputs the day of the week that their inputted date would fall on. The program also counts and outputs the number of leap years from the start of
+				the Gregorian calendar to a user inputted year. The main goal for this project was to introduce us to recognizing valid input when users are given 
+				a menu of options to choose from, and also to have a program that can perform multiple different tasks. Since this was a school project, I cannot post the code,so contact me if you would like to view my code for this project!
+			</p>
+			</br>
+
+			<h3 class = "header3" align = "left"> Project 3: ohhi.cpp </h3>
+			<img src = "ohhi.png" align = "left" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This is the third project that I completed in C++ and it is a program that allows a user to play a more simplified version of the ohhi game. If
+				you aren't familiar with the ohhi project, then <a href = "http://0hh1.com" target = "_blank">click here</a> to play a round or two of the fun logic 
+				game! What we had to do was learn the rules of the game and translate that into code for our program. This project challenged us to write pseudocode
+				and really think about our logic before we even wrote a line of code. This project also focused heavily on testing because there were a lot of invalid
+				user inputs we needed to make sure that we caught. Since this was a school project, I cannot post the code,so contact me if you would like to view my code for this project!
+			</p>
+			</br>
+
+			<h3 class = "header3" align = "left"> Showcase Project: Space Invaders + Flappy Bird + Challenge</h3>
+			<img src = "flappybird.png" align = "right" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This is my final project in my introductory programming class and we were asked to use the Arduino software as well as an RGB matrix panel to program the classic arcade game Space Invaders as well as another game of our choosing. We were left entirely on our own for this project, other than having the basic shell for Space Invaders. I was in a team of four and once we had figured out how to implement Space Invaders correctly, we were able to set up Flappy Bird entirely from scratch. This project challenged our creativity and our C++ knowledge and required us to work a lot with classes. Not only did we need to tie together course material, but we also had to learn proper team building skills and effective problem solving skills, especially since the staff was encouraging us to attempt to solve our own issues before coming to them. To top it off, we were asked to incorporate a challenge aspect to our game and my team decided that after the user passes 10 pipes in Flappy Bird, that the pipes would generate at varying distances. We also had to present our two games at our showcase, where various representatives from tech companies around Ann Arbor came to try out our games. Overall, this project was what got be excited about Computer Science and reflecting on how much I have grown since then has continuied to be a motivating factor for me. Since this was a school project, I cannot post the code,so contact me if you would like to view my code for this project!
+			</p>
+			</br>
+
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>EECS 280 Projects</title>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+
+		<style>
+			/* Sets the text hover color */
+			.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    			color: #FFFFFF; 
+			}
+			/*Sets the text hover color on navbar brand*/
+			.navbar-default .navbar-brand> li > a:hover, .navbar-default .navbar-brand > li > a:focus {
+    			color: #FFFFFF; 
+			}
+			/* Sets the background color for the active page*/
+			.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+            a:hover, .navbar-default .navbar-nav > .active > a:focus {
+           		color: #cde2f4; 
+    			background-color: #354b5e;
+			}
+			/* color scheme for the main nav bar */
+			.navbar-default {
+				color: #cde2f4;
+    			background-color: #354b5e;
+    			border-color: #354b5e;
+			}
+			/*Change active text color here*/
+			.navbar-default .navbar-nav > li > a {
+    			color: #cde2f4; 
+			}
+			/*Changes the color of my name in the corner */
+			.navbar-default .navbar-brand{
+				color: #FFFFFF;
+			}
+			/* Changes the color scheme of the dropdown menu */
+			.navbar-default .dropdown-menu > li > a:hover,
+			.navbar-default .dropdown-menu > li > a:focus {
+    			color: #cde2f4;
+    			text-decoration: none;
+    			background-color: #354b5e; /*change color of links in drop down here*/
+			}
+			.navbar-default .dropdown{
+				color: #cde2f4;
+			}
+			/* page style */
+			.container .header1 {
+				color: #354b5e;
+			}
+			.container .header3 {
+				color: #6da8db;
+			}
+			.container .paragraph{
+				font-size: 19px;
+				color: #51728f;
+			}
+			</style>
+	</head>
+	<body class = "body">
+		<!-- navigation bar -->
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="../index.html">Nihitha Pinnamaraju</a>
+    			</div>
+    			<ul class="nav navbar-nav">
+      				<li><a href="../resume/resume.html">Resume</a></li>
+      				<li><a href="aboutme.html">About Me</a></li>
+          			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+        				<li><a href="../projects/website.html">My Website</a></li>
+          				<li><a href="../projects/eecs280.html">EECS 280</a></li>
+          				<li><a href="../projects/eecs183.html">EECS 183</a></li>
+        			</ul>
+      				</li>
+      			<li><a href="../contactme/contactme.html">Contact Me</a></li>
+    			</ul>
+  			</div>
+		</nav>
+		<!-- end navigation bar -->
+
+		<div class = "container">
+			<h1 class = "header1"> EECS 280 Projects </h1>
+			<h3 class = "header3"> Project 1: Statistics </h3>
+			<img src = "stats.png" align = "left" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This program reads in a filename of numerical data and then provides a statistical summary. The main goal for this project was being comfortable working with vectors and also with reading in files. This class also had a more strict testing policy, so my test cases for this project were more thorough in catching bugs and testing edge cases. This was also the first project where I wrote my test cases before I defined most of my functions. Since 
+				this was a school project, I cannot post the code, so contact me if you would like to view my code for this project!
+			</p>
+			</br>
+			</br>
+
+			<h3 class = "header3" align = "left"> Project 2: Images </h3>
+			<img src = "crabster.jpg" align = "right" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This project read in a picture and calculated its height and width. Then, based on a seam carving algorithm, the picture can be resized or it can be distorted and the new picture is saved as a file. The main goal of this project was to introduce us to matrices and also how to setup a driver for our projects. Since this was a school project, I cannot post the code, so contact me if you would like to view my code for this project!
+			</p>
+			</br>
+
+			<h3 class = "header3" align = "left"> Project 3: Euchre </h3>
+			<img src = "euchre.jpeg" align = "left" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This project was by far one of the most arduous projects, but it felt rewarding to have completed. Like the name says, we had to implement the game of Euchre both with multiple players or with a single player. In the single player mode, a user plays with a preprogrammed computer player that has been set to play the game a certain way. In the multi-player mode, up to four users can play, and if there are less than four users playing then the remaining players will be the computer programmed players. This project challenged me to create various classes that can be applicable for other projects as well. For example, I created a card class for dealing with a regular deck of cards which can be used for any other card game I decide to program. Since this was a school project, I cannot post the code, so contact me if you would like to view my code!
+			</p>
+			</br>
+
+			<h3 class = "header3" align = "left"> Project 4: Linked Lists </h3>
+			<img src = "calc.png" align = "right" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This project introduced me to basic linked lists and the various functions that are associated with them. We also learned about the big three and how they fit in when we work on projects. Our driver ended up reading in user inputted data or data from a file containing instructions in reverse polish notation and then calculated what the result would be.  Since this was a school project, I cannot post the code, so contact me if you would like to view my code for this project!
+			</p>
+			</br>
+
+			<h3 class = "header3" align = "left"> Project 5: Machine Learning</h3>
+			<img src = "piazza.png" align = "left" hspace="15" vspace="15">
+			</br>
+			<p class = "paragraph"> 
+				For this final project, we worked with binary trees and different sorting/searching algorithms. We were also introduced to the idea of maps and keys. The goal of our program was to recognize certain input and then be able to classify certain posts on piazza into different categories based on key words or how frequently a certain word was used. Since this was a school project, I cannot post the code, so contact me if you would like to view my code for this project!
+			</p>
+			</br>
+
+	</body>
+</html>

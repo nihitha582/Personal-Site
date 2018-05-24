@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>My Website</title>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+
+		<style>
+			/* Sets the text hover color */
+			.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    			color: #FFFFFF; 
+			}
+			/*Sets the text hover color on navbar brand*/
+			.navbar-default .navbar-brand> li > a:hover, .navbar-default .navbar-brand > li > a:focus {
+    			color: #FFFFFF; 
+			}
+			/* Sets the background color for the active page*/
+			.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+            a:hover, .navbar-default .navbar-nav > .active > a:focus {
+           		color: #cde2f4; 
+    			background-color: #354b5e;
+			}
+			/* color scheme for the main nav bar */
+			.navbar-default {
+				color: #cde2f4;
+    			background-color: #354b5e;
+    			border-color: #354b5e;
+			}
+			/*Change active text color here*/
+			.navbar-default .navbar-nav > li > a {
+    			color: #cde2f4; 
+			}
+			/*Changes the color of my name in the corner */
+			.navbar-default .navbar-brand{
+				color: #FFFFFF;
+			}
+			/* Changes the color scheme of the dropdown menu */
+			.navbar-default .dropdown-menu > li > a:hover,
+			.navbar-default .dropdown-menu > li > a:focus {
+    			color: #cde2f4;
+    			text-decoration: none;
+    			background-color: #354b5e; /*change color of links in drop down here*/
+			}
+			.navbar-default .dropdown{
+				color: #cde2f4;
+			}
+			/* page style */
+			.container .header1 {
+				color: #354b5e;
+			}
+			.container .header3 {
+				color: #6da8db;
+			}
+			.container .paragraph{
+				font-size: 19px;
+				color: #51728f;
+			}
+			</style>
+	</head>
+	<body class = "body">
+		<!-- navigation bar -->
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="../index.html">Nihitha Pinnamaraju</a>
+    			</div>
+    			<ul class="nav navbar-nav">
+      				<li><a href="../resume/resume.html">Resume</a></li>
+      				<li><a href="aboutme.html">About Me</a></li>
+          			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+        				<li><a href="../projects/website.html">My Website</a></li>
+          				<li><a href="../projects/eecs280.html">EECS 280</a></li>
+          				<li><a href="../projects/eecs183.html">EECS 183</a></li>
+        			</ul>
+      				</li>
+      			<li><a href="../contactme/contactme.html">Contact Me</a></li>
+    			</ul>
+  			</div>
+		</nav>
+		<!-- end navigation bar -->
+
+		<div class = "container">
+			<h1 class = "header1"> About My Website: </h1>
+			<h3 class = "header3"><a href="https://github.com/nihitha582/Personal-Site" target = "_blank"> click for github code</a></h3>
+			<p class = "paragraph"> 
+				I initially got interested in creating my on website when I worked a little bit on front end developement during my internship
+				at Costco Wholesale. I found the components that went into web development very intriguing and also recognized the value in being able to market 
+				myself for future employers. Branching of off that, I wanted to create my own website, not only to have a clean presentation of my skills and interests, 
+				but also as another example of my creativity. While I certainly don't consider myslef to be a professional web developer, I am constantly trying to 
+				tweak my website and update its interface for a better user experience, whether that be on mobile, dektop, or PC. Feel free to click the link above to 
+				have a look at the code for my site and don't hesitate to reach out to me with any questions!
+			</p>
+
+	</body>
+</html>
