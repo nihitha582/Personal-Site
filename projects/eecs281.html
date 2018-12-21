@@ -1,0 +1,121 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>EECS 281 Projects</title>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+
+		<style>
+			/* Sets the text hover color */
+			.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    			color: #FFFFFF; 
+			}
+			/*Sets the text hover color on navbar brand*/
+			.navbar-default .navbar-brand> li > a:hover, .navbar-default .navbar-brand > li > a:focus {
+    			color: #FFFFFF; 
+			}
+			/* Sets the background color for the active page*/
+			.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+            a:hover, .navbar-default .navbar-nav > .active > a:focus {
+           		color: #cde2f4; 
+    			background-color: #354b5e;
+			}
+			/* color scheme for the main nav bar */
+			.navbar-default {
+				color: #cde2f4;
+    			background-color: #354b5e;
+    			border-color: #354b5e;
+			}
+			/*Change active text color here*/
+			.navbar-default .navbar-nav > li > a {
+    			color: #cde2f4; 
+			}
+			/*Changes the color of my name in the corner */
+			.navbar-default .navbar-brand{
+				color: #FFFFFF;
+			}
+			/* Changes the color scheme of the dropdown menu */
+			.navbar-default .dropdown-menu > li > a:hover,
+			.navbar-default .dropdown-menu > li > a:focus {
+    			color: #cde2f4;
+    			text-decoration: none;
+    			background-color: #354b5e; /*change color of links in drop down here*/
+			}
+			.navbar-default .dropdown{
+				color: #cde2f4;
+			}
+			/* page style */
+			.container .header1 {
+				color: #354b5e;
+			}
+			.container .header3 {
+				color: #6da8db;
+			}
+			.container .paragraph{
+				font-size: 19px;
+				color: #51728f;
+			}
+			</style>
+	</head>
+	<body class = "body">
+		<!-- navigation bar -->
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="../index.html">Nihitha Pinnamaraju</a>
+    			</div>
+    			<ul class="nav navbar-nav">
+      				<li><a href="../resume/resume.html">Resume</a></li>
+      				<li><a href="aboutme.html">About Me</a></li>
+          			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+        				<li><a href="../projects/website.html">My Website</a></li>
+        				<li><a href="../projects/eecs183.html">EECS 183</a></li>
+          				<li><a href="../projects/eecs280.html">EECS 280</a></li>
+          				<li><a href="../projects/eecs281.html">EECS 281</a></li>
+        			</ul>
+      				</li>
+      			<li><a href="../contactme/contactme.html">Contact Me</a></li>
+    			</ul>
+  			</div>
+		</nav>
+		<!-- end navigation bar -->
+
+		<div class = "container">
+			<h1 class = "header1"> EECS 280 Projects </h1>
+			<h3 class = "header3"> Project 1: Letterman Reboot </h3>
+			<img src = "letter.jpeg" align = "left" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This program reads in a filename of words and then runs an algorithm that determines if a series of operations can be run on the words such that the first words can, after those alterations, be transformed into the end word (the last word in the file). The operations that can be done on the words are limited to one letter examinations and are determined by what the users enters on the command line. The main goal of this project was to familiarize ourselves with queues and stacks and a basic algorithm. This project challenged me to determine what data structures I wanted to use and how to write my own algorithm to perform the necessary operations. Contact me to view my code for this project!
+			</p>
+			</br>
+			</br>
+
+			<h3 class = "header3" align = "left"> Project 2: Mine All Mine </h3>
+			<img src = "mine.jpeg" align = "right" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This project simulates a take on the game minefield. It reads in a minefield and then it is our responsibility to examine the miner's surrounding blocks and take the path of least work to break our way out of the mine. However, we had to keep track of TNT locations because we must detonate TNT if we come across it. This project allowed us to practice implementing a priority queue and using it to determine a least cost path to breaking out of the mine. This project challenged me to determine what data structures I wanted to use and how to write my own algorithm to find the least costing path. Contact me to view my code for this project! 
+			</p>
+			</br>
+
+			<h3 class = "header3" align = "left"> Project 3: SillyQL </h3>
+			<img src = "sql.jpeg" align = "left" hspace="15" vspace="15">
+			<p class = "paragraph"> 
+				This project tested our understanding of relational databases. We were given a handful of SQL commands and we needed to implement these various commands using C++. Our program was required to read in a file containing a series of commands and we needed to run those commands and then perform the necessary operations on the tables in our database. Another feature we needed to implement was a BST and Hash option of organization of tables within our database. Our limitation was that only 1 table within the database can be organized into a BST or a Hash Table, but this aspect did force us to re-hash or redo the structure of the BST as we added and removed elements from the specific table. Like the two other projects before this, this project challenged me to determine appropriate data strucutres and making sure that data was stored in the correct method. Contact me to view my code for this project!
+			</p>
+			</br>
+
+			<h3 class = "header3" align = "left"> Project 4: Gotta Catch 'Em All!</h3>
+			<img src = "pokemon.jpeg" align = "left" hspace="15" vspace="15">
+			</br>
+			<p class = "paragraph"> 
+				This project implemented our knowledge of graphs and various graph algorithms. The scenario for the project is that we are a pokemon trainer with a map of different pokemon locations. Our goal is to visit each pokemon location while minimizing the distance we travel. Our one limitation is that the bottom left quadrant is an ocean and we can only reach ocean pokemone by first visiting a pokemone on the coast (an axis surrounding the bottom left quadrant).There were three different parts to project. Part one required us to implement Prim's algorithm to traverse the map. Part two required us to solve the traveling sales person problem by using arbitrary insertion. Part three required us to optimize the traveling sales person problem by incorporating a branch and bound algorithm. Contact me to view my code for this project! 
+			</p>
+			</br>
+
+	</body>
+</html>
