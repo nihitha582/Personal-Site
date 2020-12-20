@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<title>Grocery Gamers</title>
+
+<!-- JS -->
+<script src='scripts/jquery.min.js'></script>
+<script src='scripts/page.js'></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/jpk6avf.css">
+
+<head>
+    <link rel="icon" type="image/png" href="img/favicon.png" /> <!-- src: https://favicon.io/emoji-favicons/banana/ -->
+</head>
+
+<body>
+    <div id="total-window">
+        <div id="game-window">
+            <div id="splash-screen">
+                <h1 id="gameName">Grocery Gamers</h1>
+                <div id="gameBackground">
+                    <h2 id="gamePremiseTitle">Backstory</h2>
+                    <p id="gamePremiseBody">
+                        The COVID-19 pandemic has made its way to the quaint little town of Groceryville.
+                        <br><br>
+                        To slow the spread of the virus, the state's Governor has implemented a stay at home
+                        order.
+                        <br><br>
+                        If you are going to survive the next week at home, you will need to stock up on groceries.
+                        However, grocery shopping during the pandemic is not an easy feat.
+                        <br><br>
+                        You must traverse the grocery store while maintaining proper social distancing from other
+                        customers who may be sick with COVID-19.
+                        <br><br>
+                        Additionally, you should also be careful to avoid the COVID-19 germs that may be floating around
+                        the store or living on surfaces.
+                    </p>
+                    <button class="backButton" onclick="startGame()">Skip Intro</button>
+                    <button class="nextButton" onclick="next1()">Next</button>
+                </div>
+                <div id="gameControls">
+                    <h2 id="gameControlsTitle">Game Controls</h2>
+                    <p id="gameControlsBody">
+                        To move the player, use the up, down, right, left arrow keys that correspond to the direction
+                        you would like to move the player. To collect grocery items, walk up to the shelf and press the
+                        spacebar when the item you want is circled.
+                        <br><br>
+                    </p>
+                    <div id="key-container">
+                        <img src="img/arrow_keys.png" />
+                        <h2>Navigate</h2>
+                        <img src="img/space_bar.png" />
+                        <h2>Collect Grocery Items</h2>
+                    </div>
+                    <button class="backButton" onclick="back1()">Back</button>
+                    <button class="nextButton" onclick="next2()">Next</button>
+                </div>
+                <div id="earningPoints">
+                    <h2 id="earningPointsTitle">Earning Points</h2>
+                    <p id="earningPointsBody">
+                        To earn points, traverse the store without losing all of your health from sick customers or
+                        COVID-19 germs. Pick up the items on your shopping list (shown in red below) to gain points.
+                        Picking up items not on your shopping list will cause you to lose points.
+                        <br><br>
+                        <img src="img/splash_shopping_list.png" />
+                        <br>
+                        At any time, you can walk in front of the checkout counter (shown below) to add the points from
+                        the items you have collected so far to your total score. If you checkout after collecting all
+                        the items on your list, you will get a new set of items to collect and the store shelves will be
+                        restocked.
+                        <br>
+                        <img src="img/splash_checkout.png" />
+                    </p>
+                    <button class="backButton" onclick="back2()">Back</button>
+                    <button class="nextButton" onclick="next3()">Next</button>
+                </div>
+                <div id="powerUps">
+                    <h2 id="powerUpsTitle">Power Ups</h2>
+                    <p id="powerUpsBody">
+                        Make sure to keep an eye out as you shop because Dr. Fauci may visit the store and throw you
+                        some useful powerups. Medicine recovers your health. Vaccines provide 10 seconds of immunity
+                        from germs and sick customers.
+                        <br><br>
+                    </p>
+                    <div id="powerup-container">
+                        <img src="img/medicine.png" />
+                        <h2>Medicine (Recover Health)</h2>
+                        <img src="img/vaccine.svg" />
+                        <h2>Vaccine (Temporary Immunity)</h2>
+                    </div>
+                    <button class="backButton" onclick="back3()">Back</button>
+                    <button class="nextButton" onclick="next4()">Next</button>
+                </div>
+                <div id="gamePandemicGuidelines">
+                    <h2 id="gamePandemicGuidelinesTitle">COVID-19 CDC Guidelines</h2>
+                    <p id="gamePandemicGuidelinesBody">
+                        While Grocery Gamers is merely a game developed for EECS 493, our team would like to recognize
+                        the seriousness of the COVID-19 pandemic.
+                        <br><br>
+                        COVID-19 spreads easily from person-to-person and proper guidelines must be followed to ensure
+                        your safety.
+                        <br><br>
+                        When visting a public space, such as a grocery store, wearing the proper facial covering and
+                        maintaining social distance of 6 feet is crucial to reducing the risk of catching and spreading
+                        the virus.
+                        <br><br>
+                        To learn more about how to stay safe during the pandemic, please refer to these
+                        <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html"
+                            target="_blank">CDC guidelines</a>.
+                    </p>
+                    <button class="backButton" onclick="back4()">Back</button>
+                    <button class="nextButton" onclick="startGame()">Start Game!</button>
+                </div>
+            </div>
+
+            <div id="pause-screen">
+                <h1>Game Paused</h1>
+                <p>Mute Background Music<input type="checkbox" id="bkgMusic"></input></p>
+                <p>Mute Sound Effects<input type="checkbox" id="soundEffects"></input></p>
+                <p>Mute All Audio<input type="checkbox" id="allAudio"></input></p>
+                <p>Difficulty:</p>
+                <p><input type="radio" id="easy" name="difficulty" value="easy" checked="checked">
+                    <label for="easy">Easy</label></p>
+                <p><input type="radio" id="medium" name="difficulty" value="medium">
+                    <label for="medium">Medium</label></p>
+                <p><input type="radio" id="hard" name="difficulty" value="hard">
+                    <label for="hard">Hard</label></p>
+                <button class="continueButton" onclick="continueGame()">Continue Game</button>
+            </div>
+
+            <div id="end-game">
+
+            </div>
+
+            <div id="game-screen">
+                <div id='player' class='playerObject'>
+                    <img class='player-avatar' src='img/player.png' height='50px' /> <!-- src: original artwork -->
+                </div>
+
+                <img class='checkout' id='checkout-0' src='img/checkout.png' style="top:10px; left:550px;" />
+                <!-- src: https://www.123rf.com/photo_83690329_stock-vector-cashier-girl-working-at-grocery-store-checkout-counter-sales-clerk-taking-out-goods-from-shopping-fo.html -->
+                <img class='standHere' id='standHere-0' src='img/standhere.png' style="top:105px; left:550px;" />
+                <!-- src: https://signs.ie/collections/floor-graphics/products/please-stand-here-floor-graphic -->
+
+            </div>
+        </div>
+
+        <div id="hud-panel">
+            <div id="health-bar">
+                <div id="health-status"></div>
+            </div>
+            <div id="shopping-list"></div>
+            <div id="score">Score: 0</div>
+            <button id="settings-button" onclick="settingsMenu()">
+                Settings
+                <br>
+                <img class="settings-icon" src='img/settings.png' height='40px' />
+                <!-- src: https://www.iconfinder.com/icons/2685370/phone_settings_setting_icon -->
+            </button>
+        </div>
+    </div>
+</body>
+<div class="sounds">
+    <audio id="background" autoplay="autoplay" loop="loop" autostart="true" volume="0.1">
+        <source src="audio/backgroundMusic.mp3" type="audio/mp3">
+        <!-- royalty free music from src: https://archive.org/details/SoundsForTheSupermarket11975GroceryStoreMusic_201812 -->
+    </audio>
+    <audio id="cough" autoplay="autoplay" volume="1.5">
+        <source src="audio/cough.mp3" type="audio/mp3">
+        <!-- royalty free music from src: http://soundbible.com/1864-Male-Cough.html -->
+    </audio>
+    <audio id="germ" autoplay="autoplay" volume="0.9">
+        <source src="audio/germ.mp3" type="audio/mp3">
+        <!-- royalty free music from src: http://soundbible.com/1084-Slime.html -->
+    </audio>
+    <audio id="medicine" autoplay="autoplay" volume="0.9">
+        <source src="audio/medicine.mp3" type="audio/mp3">
+        <!-- royalty free music from src: http://soundbible.com/1084-Slime.html -->
+    </audio>
+</div>
+
+</html>

@@ -1,0 +1,328 @@
+:root {
+	/* COLOR SCHEME: CSS HEX                            */
+	/* How to use these colors:                         */
+	/*     example using powder-blue                    */
+	/*     var(--powder-blue)                           */
+	/*     insert anywhere you would use a color name   */
+	--red: #cf5f3b;
+	--redOrange: #cf5f3b;
+	--orange: #e78166;
+	--goldenrod: #f0c17f;
+	--yellow: #e6f598;
+	--chartreuse: #e0de6d;
+	--green1: #95fed0;
+	--green2: #bbee9e;
+	--green3: #66c2a5;
+	--green4: #679129;
+	--darkBlue: #0075e2;
+	--lightBlue: #0ce3ff;
+	--blue: #06acf1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+	font-family: cooper-black-std, serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+}
+
+p,
+div {
+	font-family: monotype-grotesque, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+}
+
+a {
+	color: var(--green1);
+}
+
+#player {
+	top: 50px;
+	left: 450px;
+	position: absolute;
+	display: inline-block;
+	z-index: 2;
+}
+
+.item {
+	height: 35px;
+	width: 35px;
+	position: absolute;
+	z-index: 3;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	display: inline-block;
+}
+
+.medicineImage {
+	z-index: 4;
+	border-radius: 50%;
+	border: 0px solid transparent; /* for some reason it needed a border to show up */
+}
+
+.collected {
+	background-color: var(--green3);
+}
+
+.shelf {
+	height: 42px;
+	width: 42px;
+
+	z-index: 1;
+	position: absolute;
+}
+
+.checkout {
+	width: 100px;
+	position: absolute;
+	z-index: 1;
+}
+
+.standHere {
+	width: 100px;
+	position: absolute;
+}
+
+#total-window {
+	height: 800px;
+	width: 1000px;
+	z-index: 0;
+}
+
+#game-window {
+	height: 85%;
+	width: 75%;
+	background-color: var(--darkBlue);
+	float: left;
+	position: relative;
+	z-index: 0;
+}
+
+#key-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#key-container img {
+	max-height: 100px;
+}
+
+#powerup-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#powerup-container img {
+	max-height: 85px;
+}
+
+#game-screen {
+	height: 100%;
+	height: 100%;
+	background-image: url("../img/store_bg_by_laurie.png");
+}
+
+#hud-panel {
+	height: 15%;
+	width: 75%;
+	background-color: var(--blue);
+	float: left;
+	position: relative;
+}
+
+#splash-screen {
+	height: 90%;
+	width: 90%;
+	float: left;
+	position: relative;
+	z-index: 0;
+	margin: 2% 2% 2% 2%;
+	background: var(--redOrange);
+	border-style: solid;
+	border-width: 5px;
+	border-color: #85b0bd;
+	padding: 2% 2% 2% 2%;
+}
+#splash-screen img {
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#earningPointsBody img {
+	max-height: 110px;
+}
+
+#gameName {
+	text-align: center;
+}
+
+.backButton {
+	background-color: var(--green3);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	font-size: 16px;
+	margin-top: 40px;
+	margin-left: 25px;
+}
+
+.nextButton {
+	background-color: var(--green3);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	font-size: 16px;
+	margin-top: 40px;
+	margin-right: 25px;
+}
+
+.continueButton {
+	background-color: var(--green3);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	float: center;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+#pause-screen .continueButton {
+	position: relative;
+	top: 35%;
+}
+
+#pause-screen,
+#end-game {
+	height: 90%;
+	width: 90%;
+	background: var(--orange);
+	text-align: center;
+	position: absolute;
+	z-index: 10;
+	margin: 2% 2% 2% 2%;
+	padding: 2% 2% 2% 2%;
+	border-style: solid;
+	border-width: 5px;
+	border-color: var(--darkBlue);
+}
+
+#pause-screen h1,
+#end-game h1,
+p {
+	position: relative;
+	margin: 0;
+	top: 30%;
+}
+
+.replayButton {
+	background-color: var(--green3);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	float: center;
+	font-size: 16px;
+	margin-top: 20px;
+	position: absolute;
+}
+
+#end-game .replayButton {
+	position: relative;
+	top: 35%;
+}
+
+#hud-panel {
+	display: grid;
+	grid-template-areas:
+		"health health health health health health health"
+		"score list list list list list settings";
+}
+
+#settings-button {
+	width: 100%;
+	height: 100%;
+	grid-area: settings;
+	color: black;
+}
+
+#health-bar {
+	background: var(--red);
+	grid-area: health;
+	height: 50%;
+	margin: 1% 10% 0% 10%;
+	display: flex;
+}
+
+#health-status {
+	width: 100%;
+	height: 100%;
+	background: var(--green3);
+	z-index: 10;
+}
+
+#shopping-list {
+	margin: auto;
+	background: var(--yellow);
+	grid-area: list;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 90%;
+	height: 50px;
+}
+
+img.list_item {
+	object-fit: contain;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#score {
+	text-align: center;
+	position: relative;
+	padding-left: 20px;
+	margin: 0;
+	top: 50%;
+	font-size: 20px;
+}
+
+#score-info {
+	font-size: 16px;
+}
+
+#game-over-text {
+	font-size: 30px;
+}
+
+#final-score {
+	font-size: 30px;
+}
+
+.settings-icon {
+	padding-top: "5px";
+}
+
+.sounds {
+	display: none;
+}
